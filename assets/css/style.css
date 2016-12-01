@@ -1,0 +1,33 @@
+.hover-outline {}
+
+.img_size {
+    height: 150px;
+    width: 150px;
+}
+
+body {
+    background-image: url("../images/starwars_backgrnd.jpg");
+}
+
+#players {
+    padding-top: 60px;
+}
+
+
+
+.char {
+   width: 150px;
+    height: 150px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px;
+}
+
+.char-button {
+    
+}
+
+.char-button-image {
+    color: darkcyan;
+}
