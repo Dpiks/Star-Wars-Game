@@ -16,8 +16,7 @@ body {
 
 
 .char {
-   width: 150px;
-    height: 150px;
+   
     border-style: solid;
     padding: 2px;
     float: left;
