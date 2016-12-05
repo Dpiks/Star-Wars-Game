@@ -3,7 +3,7 @@ var char_list = [{
     HP: 100,
     AP: 5,
     CAP: 5,
-    image: "/assets/images/luke.jpg"
+    image: "./assets/images/luke.jpg"
 }, {
     name: "Obi Wan Kenobi",
     HP: 120,
@@ -44,32 +44,26 @@ function loadCharacters() {
 
         $(".choose_char_list").append(charDiv);
 
-        //var charName=$("<p>");
-        //charName.addClass();
-        //charName.text(char_list[i].name);
-        //charDiv.append(charName);
+        
         charDiv.append("<p>" + char_list[i].name + "</p>");
 
-        var charImage = $("<img>");
-        charImage.addClass("img_size");
-        //charImage.css({src:"char_list[i].image"});
-        charImage.css('src', "'" + char_list[i].image + "'");
-        //charBtn.css('background-image','url('+char_list[i].image +')');
+        
 
-        charDiv.append(charImage);
-        //console.log(char_list[i].image);
+        
+        
+     
+        
+        charDiv.css('background-image','url('+char_list[i].image +')');
 
-        //var charHP=$("<p>");
-        //charHP.addClass();
-        //charHP.text(char_list[i].HP);
-        //charDiv.append(charHP);
+        
+       
 
         charDiv.append("<p>" + char_list[i].HP + "</p>");
 
 
 
 
-        //charDiv.append("<img src=" +char_list[i].image+ ">");
+       
 
     }
 
@@ -96,25 +90,10 @@ function loadEnemyCharacters() {
 
         $(".enemy-char-list").append(charDiv);
 
-        //var charName=$("<p>");
-        //charName.addClass();
-        //charName.text(char_list[i].name);
-        //charDiv.append(charName);
+        
         charDiv.append("<p>" + enemy_list[i].name + "</p>");
 
-        var charImage = $("<img>");
-        charImage.addClass("img_size");
-        //charImage.css({src:"char_list[i].image"});
-        charImage.css('src', "'" + enemy_list[i].image + "'");
-        //charBtn.css('background-image','url('+char_list[i].image +')');
-
-        charDiv.append(charImage);
-        //console.log(char_list[i].image);
-
-        //var charHP=$("<p>");
-        //charHP.addClass();
-        //charHP.text(char_list[i].HP);
-        //charDiv.append(charHP);
+        charDiv.css('background-image','url('+char_list[i].image +')');
 
         charDiv.append("<p>" + enemy_list[i].HP + "</p>");
     }
@@ -165,20 +144,7 @@ $(document).ready(function() {
 
                 charDiv.append("<p>" + char_list[i].name + "</p>");
 
-                var charImage = $("<img>");
-                charImage.addClass("img_size");
-                //charImage.css({src:"char_list[i].image"});
-                charImage.css('src', "'" + char_list[i].image + "'");
-                //charBtn.css('background-image','url('+char_list[i].image +')');
-
-                charDiv.append(charImage);
-                //console.log(char_list[i].image);
-
-                //var charHP=$("<p>");
-                //charHP.addClass();
-                //charHP.text(char_list[i].HP);
-                //charDiv.append(charHP);
-
+                charDiv.css('background-image','url('+char_list[i].image +')');
                 charDiv.append("<p>" + char_list[i].HP + "</p>");
 
 
@@ -219,20 +185,7 @@ $(document).ready(function() {
 
                     charDiv.append("<p>" + enemy_list[i].name + "</p>");
 
-                    var charImage = $("<img>");
-                    charImage.addClass("img_size");
-                    //charImage.css({src:"char_list[i].image"});
-                    charImage.css('src', "'" + enemy_list[i].image + "'");
-                    //charBtn.css('background-image','url('+char_list[i].image +')');
-
-                    charDiv.append(charImage);
-                    //console.log(char_list[i].image);
-
-                    //var charHP=$("<p>");
-                    //charHP.addClass();
-                    //charHP.text(char_list[i].HP);
-                    //charDiv.append(charHP);
-
+                     charDiv.css('background-image','url('+char_list[i].image +')');
                     charDiv.append("<p>" + enemy_list[i].HP + "</p>");
                 }
             }

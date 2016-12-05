@@ -18,7 +18,7 @@ body {
 }
 
 .enemy{
-	background-color: 	black;
+	
 }
 
 .class_you{
@@ -39,6 +39,11 @@ body {
     padding: 2px;
     float: left;
     margin: 2px;
+    background-repeat: 	no-repeat;	
+    background-position: 	center;	
+    background-size: 70%;
+    width: 	150px;
+    height: 	150px;
 }
 
 
