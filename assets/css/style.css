@@ -13,9 +13,27 @@ body {
     padding-top: 60px;
 }
 
+.enemy-char-list,.player1,.player2{
+	visibility: 	hidden;
+}
+
+.enemy{
+	background-color: 	black;
+}
+
+.class_you{
+	width:50px;
+}
+
+.col-md-4{
+	visibility: 	hidden;	
+}
 
 
-.char {
+
+
+
+.char,.enemy,.your_char_class,.defender_char_class{
    
     border-style: solid;
     padding: 2px;
@@ -23,10 +41,4 @@ body {
     margin: 2px;
 }
 
-.char-button {
-    
-}
 
-.char-button-image {
-    color: darkcyan;
-}
