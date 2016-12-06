@@ -14,15 +14,25 @@
 </head>
 
 <body>
+<nav class="navbar navbar-default">
+        <div class="container">
+        	
+            <h1>STAR WARS</h1>
+          
+        </div>
+    </nav>
+
     <div class="container">
         <div class="row choose_char_list">
-            <p class="choose">Choose your character</p>
+        	
+            		<h3 class="choose">Choose your character</h3>
+          
         </div>
         <div class="row enemy-char-list">
-            <p>Choose whom you want to fight against</p>
+            <h3>Choose your opponent</h3>
         </div>
         
-        <div class="row">
+        <div class="row fight_field">
             <div class="col-md-4 player1">
             <p>You</p>
                 
@@ -33,68 +43,18 @@
             </div>
         </div>
         <div class="row attack">
+				<button type="button" class="attack_btn">Attack!!</button>
+
         </div>
-        <div class="row restart_btn">
+        <div class="row restart_btn_row">
+        		<button type="button" class="restart_btn">Restart</button>
+        </div>
+
+         <div class="row">
+         <p class="message"></p>
         </div>
     </div>
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
-<!--<div class="col-md-2">
-                <p>Select a character</p>
-            </div>
-            <div class="col-md-2">
-                <p>
-                    Luke Skywalker
-                    <img class="img-responsive img_size" src="./assets/images/luke.jpg" alt="luke_skywalker" class="hover-outline">
-                    <span id="">HP - 50 </span>
-                    <span id="">AP - 3</span>
-                    <span id="">CAP - 3 </span>
-                </p>
-            </div>
-            <div class="col-md-2">
-                <p>
-                    Obi-Wan Kenobi
-                    <img class="img-responsive img_size" src="./assets/images/obi.jpg" alt="obi_wan_kenobi" class="hover-outline">
-                    <span id="">HP - 50 </span>
-                    <span id="">AP - 3</span>
-                    <span id="">CAP - 3 </span>
-                </p>
-            </div>
-            <div class="col-md-2">
-                <p>
-                    Darth Maul
-                    <img class="img-responsive img_size" src="./assets/images/maul.jpg" alt="Darth_Maul" class="hover-outline">
-                    <span id="">HP - 50 </span>
-                    <span id="">AP - 3</span>
-                    <span id="">CAP - 3 </span>
-                </p>
-            </div>
-            <div class="col-md-2">
-                <p>
-                    Darth Sidious
-                    <img class="img-responsive img_size" src="./assets/images/sidious.jpg" alt="Darth_Sidious" class="hover-outline">
-                    <span id="">HP - 50 </span>
-                    <span id="">AP - 3</span>
-                    <span id="">CAP - 3 </span>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2" id="enemy_characters">
-            	<p>Enemy Characters</p>
-            </div>
-
-        </div>
-
-        <div class="row">
-        	<div class="col-md-4" id="player_char">
-        		
-        	</div>
-        	<div class="col-md-4" id="defender_char">
-
-        	</div>
-        	
-        </div>
-    </div>-->
