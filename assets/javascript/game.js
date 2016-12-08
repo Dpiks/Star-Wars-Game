@@ -3,7 +3,7 @@ var char_list = [{
     HP: 100,
     AP: 5,
     CAP: 5,
-    image: "./assets/images/luke1.jpg"
+    image: "./assets/images/luke.gif"
 }, {
     name: "Obi Wan Kenobi",
     HP: 120,

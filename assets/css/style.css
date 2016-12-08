@@ -1,4 +1,4 @@
-.hover-outline {}
+@import url('https://fonts.googleapis.com/css?family=Geostar+Fill');
 
 .img_size {
     height: 150px;
@@ -8,7 +8,9 @@
 body {
     background-image: url("../images/starwars_backgrnd.jpg");
     /*background-size: 	100%;*/
-    background-position: top;	
+    background-position: center;	
+    background-size: 	100%;
+
 
 }
 
@@ -16,22 +18,29 @@ body {
     
     background-position: bottom;
     
-    background-color: 	black;
+    background-image:url("../images/stardust.png")	;
     text-align:center;
     width: 100%;
     margin:0 auto;
     float: none;
+    font-family: 'Geostar Fill';
 }
 
 .choose_char_list{
 	border:2px solid #73AD21;
 	text-align: 	center;	
-	max-width: 	700px;
+
+	
 	align-self: 	center;	
+}
+
+.enemy-char-list{
+		background-color: 	red;
 }
 
 .fight_field{
 	visibility: hidden;	
+	background-color: 	green;
 }
 
 h1{
@@ -55,6 +64,7 @@ h1{
 
 .enemy-char-list,.player1,.player2, .restart_btn,.attack{
 	visibility: 	hidden;
+
 }
 
 p{
@@ -81,18 +91,22 @@ h3{
 	
 }
 
+.message{
+	background-color: 	white;
+}
+
 .char,.enemy,.your_char_class,.defender_char_class{
    
-    border-style: solid;
+   
     
     padding: 2px;
-    float: 	right;	
-    margin: 2px;
+   		margin-left: 	90px;
+   
     background-repeat: 	no-repeat;	
     background-position: 	bottom	;	
     background-size: 70%;
-    width: 	150px;
-    height: 	150px;
+    width: 	180px;
+    height: 	180px;
 }
 
 
