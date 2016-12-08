@@ -14,6 +14,24 @@ body {
 
 }
 
+.game_rules{
+	background-image: 	url("../images/dark_embroidery.png");
+	color:#ffffff;
+	border-radius: 	20px;
+	padding: 	30px;
+	margin-top: 	20px;
+
+}
+
+.start_game_btn {
+	background-image: 	url("../images/dark_embroidery.png");
+	color:#ffffff;
+	border-radius: 	20px;
+	float: center;
+}
+
+
+
 .navbar {
     
     background-position: bottom;
@@ -27,20 +45,36 @@ body {
 }
 
 .choose_char_list{
-	border:2px solid #73AD21;
+	background-image: 	url("../images/stardust.png");
+	border-radius: 	20px;
 	text-align: 	center;	
+	display: 	none;
+	color: 	#ffffff;
+	margin-top: 	20px;
 
 	
 	align-self: 	center;	
 }
 
+.choose,.opponent_h3{
+	color:#4ffff5;
+}
+
 .enemy-char-list{
 		background-color: 	red;
+		background-image: 	url("../images/stardust.png");
+		border-radius: 	20px;
+	text-align: 	center;	
+	color: 	#ffffff;
+	margin-top: 	20px;
+
+	
+	align-self: 	center;	
 }
 
 .fight_field{
 	visibility: hidden;	
-	background-color: 	green;
+	
 }
 
 h1{
@@ -60,6 +94,34 @@ h1{
 
 #players {
     padding-top: 60px;
+}
+
+.attack{
+	padding-left:500px;
+	padding-top: 	30px;
+}
+
+.player1{
+	color:#ffffff;
+	border-radius: 	20px;
+	background-color: 	#6dccb9;
+	align-self: 	center;	
+	margin-left:80px;
+	margin-right:80px;
+	
+	margin-bottom: 	30px;
+}
+
+.player2{
+	color:#ffffff;
+	border-radius: 	20px;
+	background-color: 	#dd1555;
+	
+	margin-left:80px;
+	margin-right:80px;
+	
+	margin-bottom: 	30px;
+	align-self: 	center;	
 }
 
 .enemy-char-list,.player1,.player2, .restart_btn,.attack{

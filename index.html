@@ -20,10 +20,16 @@
         <div class="container">
         <a href="#" class="navbar-left"><img src="./assets/images/logo.png"></a>
 
-            <h1>STAR WARS in the street</h1>
+            <h1>STAR WARS - RPG</h1>
         </div>
     </nav>
     <div class="container">
+    	<div class="row game_rules">
+    	<h3>Welcome to the Star Wars Role Playing Game!! </h3>
+    	<p>Game flow and Rules: There are multiple characters to choose. Each character has their own health points(HP), attack power(AP), counter-attack power(CAP). First, you choose your character from the options. The remaining characters become your enemies. You select one at a time from this list and fight that character. The aim of the game is to defeat all your enemies by attacking them. Each time 'Attack' is clicked, your character attacks with AP and enemy counter-attacks with CAP. AP of your character increases by your character's CAP each time. Which means your character becomes powerful every time he attacks. Anytime in the game your character's HP goes to 0 or below, you loose. When you reduce your enemy's HP to 0 or below, that character looses to you and you can select whom you want to attack next. You win by defeating all your enemies.</p></div>
+    	<div class="row">
+    	<button type="button" class="start_game_btn">Start Game</button>
+    	</div>
 
         <div class="row choose_char_list">
            
@@ -31,7 +37,13 @@
            
         </div>
         <div class="row enemy-char-list">
-            <h3>Choose your opponent</h3>
+            <h3 class="opponent_h3">Choose your opponent</h3>
+        </div>
+        <div class="row attack">
+            <button type="button" class="attack_btn">Attack!!</button>
+        </div>
+        <div class="row restart_btn_row">
+            <button type="button" class="restart_btn">Restart</button>
         </div>
         <div class="row fight_field">
             <div class="col-md-4 player1">
@@ -41,12 +53,7 @@
                 <p> Active Defender</p>
             </div>
         </div>
-        <div class="row attack">
-            <button type="button" class="attack_btn">Attack!!</button>
-        </div>
-        <div class="row restart_btn_row">
-            <button type="button" class="restart_btn">Restart</button>
-        </div>
+        
         <div class="row">
             <p class="message"></p>
         </div>
