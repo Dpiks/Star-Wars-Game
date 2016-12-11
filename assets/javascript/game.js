@@ -3,7 +3,7 @@ var char_list = [{
     HP: 100,
     AP: 5,
     CAP: 5,
-    image: "./assets/images/luke.gif"
+    image: "./assets/images/luke.jpg"
 }, {
     name: "Obi Wan Kenobi",
     HP: 120,
@@ -23,7 +23,7 @@ var char_list = [{
     HP: 180,
     AP: 25,
     CAP: 25,
-    image: "./assets/images/maul1.jpeg"
+    image: "./assets/images/maul.jpg"
 }]
 
 
@@ -47,7 +47,7 @@ function loadCharacters() {
 
         charDiv.append("<p>" + char_list[i].name + "</p>");
         charDiv.css('background-image', 'url(' + char_list[i].image + ')');
-        charDiv.append("<p>" + char_list[i].HP + "</p>");
+        charDiv.append("<p>HP: " + char_list[i].HP + "</p>");
     }
 
 }
@@ -90,7 +90,7 @@ var loadEnemyCharacters = function() {
 
         charDiv.css('background-image', 'url(' + enemy_list[i].image + ')');
 
-        charDiv.append("<p>" + enemy_list[i].HP + "</p>");
+        charDiv.append("<p>HP: " + enemy_list[i].HP + "</p>");
 
     }
 }
@@ -135,9 +135,16 @@ $(document).ready(function() {
                     charDiv.css('background-image', 'url(' + char_list[i].image + ')');
                     var your_p_HP = $("<p>");
                     your_p_HP.addClass("your_HP");
-                    your_p_HP.html(char_list[i].HP);
+                    your_p_HP.html("HP: "+char_list[i].HP);
                     charDiv.append(your_p_HP);
                     //charDiv.append("<p>" + char_list[i].HP + "</p>");
+
+                     var your_p_AP = $("<p>");
+                    your_p_AP.addClass("your_AP");
+                    your_p_AP.html("AP: " + char_list[i].AP);
+                    charDiv.append(your_p_AP);
+
+
 
 
 
@@ -183,10 +190,20 @@ $(document).ready(function() {
 
                             var def_p_HP = $("<p>");
                             def_p_HP.addClass("def_HP");
-                            def_p_HP.html(enemy_list[i].HP);
+                            def_p_HP.html("HP: "+enemy_list[i].HP);
                             charDiv.append(def_p_HP);
+
+                            var def_p_CAP = $("<p>");
+                            def_p_CAP.addClass("def_CAP");
+                            def_p_CAP.html("CAP: "+enemy_list[i].CAP);
+                            charDiv.append(def_p_CAP);
+
+
                             enemy_list.splice(i, 1);
                             $(this).remove();
+                            if(enemy_list.length===0){
+                                $(".enemy-char-list").css("visibility","hidden");
+                            }
                         }
                     }
 
@@ -211,8 +228,10 @@ $(document).ready(function() {
 
 
 
-                        $(".def_HP").html(defender_char.HP);
-                        $(".your_HP").html(your_char.HP);
+                        $(".def_HP").html("HP: "+defender_char.HP);
+                        $(".your_HP").html("HP: "+your_char.HP);
+                        $(".def_CAP").html("CAP: "+defender_char.CAP);
+                        $(".your_AP").html("AP: "+your_char.CAP);
                         if (defender_char.HP <= 0) {
                             if (enemy_list.length <= 0) {
                                 $(".message").html("You defeated all your enemies. Press restart to play a new game.");

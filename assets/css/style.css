@@ -27,7 +27,9 @@ body {
 	background-image: 	url("../images/dark_embroidery.png");
 	color:#ffffff;
 	border-radius: 	20px;
-	float: center;
+	margin-left: 40%;
+	margin-top: 50px;
+	width: 300px;
 }
 
 
@@ -157,6 +159,16 @@ h3{
 	background-color: 	white;
 }
 
+.your_HP,.def_HP{
+	float: left;
+}
+
+.your_AP,.def_CAP{
+	float: right;
+}
+
+
+
 .char,.enemy,.your_char_class,.defender_char_class{
    
    
@@ -168,7 +180,7 @@ h3{
     background-position: 	bottom	;	
     background-size: 70%;
     width: 	180px;
-    height: 	180px;
+    height: 	150px;
 }
 
 
